@@ -173,6 +173,15 @@ a:active {
 /*  Mobile-first. Single-column layout by default
  *  Container sets the maximum page width. Adjust as needed. */
 
+
+.save-the-date-title{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 42px;
+  font-weight: 600;
+  color: #6ab4b5;
+
+}
+
 .save-the-date-text{
   font-family: 'Pinyon Script', cursive;
   font-size: 42px;
