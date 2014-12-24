@@ -77,7 +77,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Pinyon Script', cursive;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -173,6 +173,12 @@ a:active {
 /*  Mobile-first. Single-column layout by default
  *  Container sets the maximum page width. Adjust as needed. */
 
+.save-the-date-text{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 42px;
+  color: #6ab4b5;
+
+}
 
 .container {
   width: 100%;
@@ -199,8 +205,8 @@ a:active {
   margin-right: auto;
 }
   
-  .grid-img{
-    width:96%;
+  .grid-img, .banner{
+    width:97%;
   }
 
   .grid-fourth,
@@ -253,7 +259,7 @@ a:active {
   }
 
   .row-start-small .grid-third,
-  .grid-img {
+  .grid-img, .banner {
     width: 97%;
   }
 
@@ -276,7 +282,7 @@ a:active {
   .cover-up-gdoc-banner{
     margin-top:-200px;
   }
-  .grid-img{
+  .grid-img, .banner{
     width:700px;
   }
 
