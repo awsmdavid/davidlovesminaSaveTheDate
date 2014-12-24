@@ -216,6 +216,11 @@ a:active {
   /*top: 90px;*/
 }
 
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .save-the-date-title{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 42px;
@@ -232,12 +237,6 @@ a:active {
 
 }
 
-.container {
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .grid-full{
   width: 100%
 }
@@ -247,10 +246,57 @@ a:active {
  *  Two-column layout for .grid-img. */
 @media (min-width: 20em) {
 
-.cover-up-gdoc-banner{
-  margin-top:-140px;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
+.overlap-img{
+  margin-left: -50px;
+  top: 70px;
+  float: left;
+  position: absolute;
+  background-color: none;
+  background: none;
+}
+
+.postcard{
+    background: none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 160px;
+    /*margin: 5px;*/
+    /*opacity: 0.4;*/
+    transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+    transition-property: width, height, transform, background, font-size, opacity;
+    width: 210px;
+    /*top: 90px;*/
+    padding: 30px;
+}
+
+.postcard:hover{
+  top:0px;
+  margin-left:0px;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  opacity:1;
+  width: 600px;
+  height: 400px;
+
+/*  
+  for less slanty image
+  width:400px;
+  height:300px;*/
+  font-size:30px;
+  position: relative;
+  /*top: 90px;*/
+}
 .gridwidth {
   margin-top: 0;
   margin-left: auto;
@@ -301,10 +347,57 @@ a:active {
  *  Option to activate grid on medium screens.
  *  Three-column layout for .grid-img. */
 @media (min-width: 34em) {
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .cover-up-gdoc-banner{
-    margin-top:-200px;
-  }
+
+.overlap-img{
+  margin-left: 0px;
+  top: 25px;
+  float: left;
+  position: absolute;
+  background-color: none;
+  background: none;
+}
+
+.postcard{
+    background: none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 160px;
+    /*margin: 5px;*/
+    /*opacity: 0.4;*/
+    transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+    transition-property: width, height, transform, background, font-size, opacity;
+    width: 210px;
+    /*top: 90px;*/
+    padding: 30px;
+}
+
+.postcard:hover{
+  top:0px;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  opacity:1;
+
+  width: 800px;
+  height: 600px;
+
+/*  
+  for less slanty image
+  width:400px;
+  height:300px;*/
+  font-size:30px;
+  position: relative;
+  /*top: 90px;*/
+}
   /*  Show grid for small screens */
   .row-start-small .grid-fourth {
     width: 25%;
@@ -331,9 +424,6 @@ a:active {
  *  Four-column layout for .grid-img. */
 @media (min-width: 44.333em) {
 
-  .cover-up-gdoc-banner{
-    margin-top:-200px;
-  }
   .grid-img, .banner{
     width:700px;
   }
