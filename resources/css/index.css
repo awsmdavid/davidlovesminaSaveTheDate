@@ -77,11 +77,10 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  background-color: #e7f5f5;
 }
 
 /* Add box sizing to everything
@@ -173,9 +172,45 @@ a:active {
 /*  Mobile-first. Single-column layout by default
  *  Container sets the maximum page width. Adjust as needed. */
 
+.overlap-img{
+  top: 15px;
+  float: left;
+  position: absolute;
+  background-color: none;
+  background: none;
+}
+
+.postcard{
+    background: none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 100px;
+    margin: 5px;
+    /*opacity: 0.4;*/
+    transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+    transition-property: width, height, transform, background, font-size, opacity;
+    width: 150px;
+    /*top: 90px;*/
+}
+
+.postcard:hover{
+  top:5px;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  opacity:1;
+  width:800px;
+  height:600px;
+  font-size:30px;
+  position: relative;
+  /*top: 90px;*/
+}
 
 .save-the-date-title{
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: #6ab4b5;
@@ -190,7 +225,7 @@ a:active {
 }
 
 .container {
-  width: 100%;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -349,7 +384,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #272727;
-  background: white;
+  background: #e7f5f5;
 }
 
 p {
@@ -386,13 +421,11 @@ p {
 /*  Links
  *  Hyperlink styling */
 a {
-  color: #0088cc;
   text-decoration: none;
   word-wrap: break-word;
 }
 
 a:hover {
-  color: #005580;
   text-decoration: underline;
 }
 
