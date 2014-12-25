@@ -237,6 +237,13 @@ a:active {
 
 }
 
+#tunes{
+  margin-top: 50px;
+/*  float: right;
+  position: absolute;
+  bottom: 0px;*/
+}
+
 .grid-full{
   width: 100%
 }
@@ -245,6 +252,16 @@ a:active {
  *  Option to activate grid on small screens.
  *  Two-column layout for .grid-img. */
 @media (min-width: 20em) {
+
+
+.save-the-date-title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #E86240;
+  padding-top: 15px;
+
+}
 
 .container {
   width: 100%;
@@ -258,7 +275,7 @@ a:active {
 
 .overlap-img{
   margin-left: -30px;
-  top: 35px;
+  top: 55px;
   float: left;
   position: absolute;
   background-color: none;
@@ -282,7 +299,7 @@ a:active {
 }
 
 .postcard:hover{
-  top:0px;
+  top:55px;
   margin-left:0px;
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
@@ -290,16 +307,11 @@ a:active {
   transform: rotate(360deg);
   opacity:1;
   width: 600px;
-  height: 400px;
-
-/*  
-  for less slanty image
-  width:400px;
-  height:300px;*/
+  height: 300px;
   font-size:30px;
   position: relative;
-  /*top: 90px;*/
 }
+
 .gridwidth {
   margin-top: 0;
   margin-left: auto;
@@ -350,6 +362,16 @@ a:active {
  *  Option to activate grid on medium screens.
  *  Three-column layout for .grid-img. */
 @media (min-width: 34em) {
+
+
+.save-the-date-title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #E86240;
+  padding-top: 5px;
+}
+
 .container {
   width: 800px;
   margin-left: auto;
@@ -363,7 +385,7 @@ a:active {
 
 .overlap-img{
   margin-left: 0px;
-  top: 55px;
+  top: 40px;
   float: left;
   position: absolute;
   background-color: none;
@@ -387,21 +409,15 @@ a:active {
 }
 
 .postcard:hover{
-  top:30px;
+  top:0px;
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
   opacity:1;
-
-  width: 800px;
-  height: 525px;
-  padding-left: 100px;
-
-/*  
-  for less slanty image
-  width:400px;
-  height:300px;*/
+  width: 820px;
+  height: 600px;
+  padding-left: 60px;
   font-size:30px;
   position: relative;
   /*top: 90px;*/
